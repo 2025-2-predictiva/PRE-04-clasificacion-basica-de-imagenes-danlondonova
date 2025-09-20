@@ -14,9 +14,9 @@ def test_01():
     data, target = digits
 
     if not os.path.exists("homework/estimator.pkl"):
-        raise FileNotFoundError("homework/estimator.pickel not found")
+        raise FileNotFoundError("homework/estimator.pickle not found")
 
-    with open("homework/estimator.pickel", "rb") as file:
+    with open("homework/estimator.pickle", "rb") as file:
         new_clf = pickle.load(file)
 
     accuracy = accuracy_score(
